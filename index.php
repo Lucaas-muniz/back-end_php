@@ -11,8 +11,8 @@ include 'dados/dados.php';
     foreach ($marmitas as $key => $value) {
 
     ?>
-        <div class="container"><a href="pagina2.php?id=<?php echo $value['id'];?>" title="saiba mais!"><img src=<?php echo $value['imagem'];?>></a>
-            <p><a href="pagina2.php?id=<?php echo $value['id'];?>" title="saiba mais!"><?php echo $value['nome'];?></a></p>
+        <div class="container"><a href="pagina2.php?id=<?php echo $value['id'];?>" title="saiba mais!" alt="<?php echo $value['alt']; ?>"><img src=<?php echo $value['imagem'];?>></a>
+            <p><a href="pagina2.php?id=<?php echo $value['id'];?>" title="saiba mais!"><?php echo $value['nome'];?></a>- <?php echo $value['preco'];?></p>
         </div>
     <?php
     }
